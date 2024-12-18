@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class CalcularConIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce el primer número: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Introduce el segundo número: ");
+        int num2 = scanner.nextInt();
+
+        System.out.print("¿Quieres sumar o restar? (suma/resta): ");
+        String operacion = scanner.next();
+
+        int resultado;
+
+        if (operacion.equals("suma")) {
+            resultado = num1 + num2;
+            System.out.println("El resultado de la suma es: " + resultado);
+        } else if (operacion.equals("resta")) {
+            resultado = num1 - num2;
+            System.out.println("El resultado de la resta es: " + resultado);
+        } else {
+            System.out.println("Operación no válida.");
+        }
+
+        scanner.close();
+    }
+}
+t 
